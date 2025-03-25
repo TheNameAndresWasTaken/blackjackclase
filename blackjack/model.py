@@ -59,4 +59,13 @@ class Mano:
             self.cartas.append(carta)
             self.cantidad_ases += 1
 
-    def calcular_valor(self) -> int:
+    def calcular_valor(self) -> int | str:
+        for carta in self.cartas:
+            if carta.oculta:
+                return "--"
+
+        valor_mano = 0
+
+        for carta in self.cartas[:-self.cantidad_ases]:
+            valor_mano +=
+
