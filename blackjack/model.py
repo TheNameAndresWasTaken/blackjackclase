@@ -57,5 +57,4 @@ class Mano:
     def agregar_carta(self,carta: Carta):
         self.cartas.append(carta)
 
-    def calcular_valor(self) -> int:       a
-
+    def calcular_valor(self) -> int:
