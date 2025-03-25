@@ -12,7 +12,7 @@ OCULTA = "\u25AE\uFE0F"
 
 @dataclass
 class Carta:
-    VALORES: ClassVar[list[str]] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q"]
+    VALORES: ClassVar[list[str]] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
     PINTAS: ClassVar[list[str]] = [CORAZON, TREBOL, DIAMANTE, ESPADA]
     pinta: str
     valor: str
