@@ -55,6 +55,8 @@ class Mano:
                or self.cartas[1].valor == "A" and self.cartas[0].valor in ["10","J","Q", "K"]
 
     def agregar_carta(self,carta: Carta):
-        self.cartas.append(carta)
+        if carta.valor == "A"
+            self.cartas.append(carta)
+            self.cantidad_ases += 1
 
     def calcular_valor(self) -> int:
