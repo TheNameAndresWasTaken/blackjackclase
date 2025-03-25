@@ -40,3 +40,22 @@ class Baraja:
             return carta
         else:
             return None
+
+
+class Mano:
+
+    def __init__(self):
+        self.cartas: list[Carta] = []
+
+    def es_blackjack(self) -> bool:
+        if len(self.cartas) > 2:
+            return False
+
+        return self.cartas[0].valor == "A" and self.cartas[1].valor in ["10","J","Q", "K"] \
+               or self.cartas[1].valor == "A" and self.cartas[0].valor in ["10","J","Q", "K"]
+
+    def agregar_carta(self,carta: Carta):
+        self.cartas.append(carta)
+
+    def calcular_valor(self) -> int:
+
